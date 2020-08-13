@@ -11,7 +11,7 @@ Class components are in `src/components`.
 Functional components are in `src/views`.
 Utils/helper functions are in `src/utils`.
 
-The app has 2 screens: Search and User:
+The app has 2 screens, Search and User:
 - Search screen allows you to pass a query to the Unsplash API to get a list of users
   - Click on a user to go to the User screen
 - User screen shows a selected users username, profile image, and a gallery of their photos
@@ -34,4 +34,4 @@ On a machine with `expo-cli` installed:
 On a machine with `expo-cli` installed:
 - Clone the git repo
 - Step into the repo folder
-- run `expo build:{PLATFORM}` where `PLATFORM` is one of 'android', 'ios', or 'web'
+- run `expo build:PLATFORM` where `PLATFORM` is one of 'android', 'ios', or 'web'
