@@ -2,9 +2,7 @@
 
 ## Download APK (doesn't require any configuration)
 
-Download the Android build [here](https://expo.io/artifacts/ce058a9e-4433-4fc6-abae-c2c9ca5ca718).
-
-Updated build [here](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40tjs97/colortvunsplash-5282be2917084ddc81f2044686a6ab47-signed.apk).
+Download the Android build [here](https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40tjs97/colortvunsplash-5282be2917084ddc81f2044686a6ab47-signed.apk).
 
 ## Project Structure
 
