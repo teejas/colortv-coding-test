@@ -1,0 +1,12 @@
+{
+  "name": "colortvunsplash",
+  "displayName": "colortvunsplash",
+  "expo": {
+    "name": "colortvunsplash",
+    "slug": "colortvunsplash",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
