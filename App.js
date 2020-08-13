@@ -3,10 +3,10 @@ import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createAppContainer, createStackNavigator } from '@react-navigation/stack';
+import ListView from 'deprecated-react-native-listview';
 
-import SearchView from '/src/views/searchView.js';
-// import UserView from '/src/views/userView.js';
-// import ImageView from '/src/views/imageView.js';
+import SearchView from './src/views/searchView.js';
+import UserView from './src/views/userView.js';
 
 const Stack = createStackNavigator();
 
@@ -15,8 +15,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Search" component={SearchView} />
-        // <Stack.Screen name="User" component={UserView} />
-        // <Stack.Screen name="Image" component={ImageView} />
+        <Stack.Screen name="User" component={UserView} />
       </Stack.Navigator>
     </NavigationContainer>
   );
