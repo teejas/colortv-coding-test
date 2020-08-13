@@ -18,23 +18,21 @@ class UserScreen extends Component {
       for(var i in this.state.user_obj.photos) {
         sources.push({source: {uri: this.state.user_obj.photos[i].urls.thumb}})
       }
+      if(this._isMounted) {
+        this.setState({
+          images: sources,
+        })
+      }
     }
     if(this.state.user_obj.profile_image && this._isMounted) {
       this.setState({
         profile_img_available: true,
-        images: sources,
       })
     }
   }
 
   componentWillUnmount = () => {
     this._isMounted = false;
-  }
-
-  calculatedSize = () => {
-    const windowWidth = Dimensions.get('window').width;
-    const size = windowWidth / 3;
-    return {width: size, height: size}
   }
 
   render() {
@@ -59,7 +57,13 @@ class UserScreen extends Component {
     } else {
       return (
         <View style={styles.container}>
-          <Text style={styles.title}>{this.state.user_obj.username}</Text>
+          <View style={styles.profile}>
+            <Text style={styles.title}>{this.state.user_obj.username}</Text>
+          </View>
+          <Gallery
+            style={{ flex: 1, backgroundColor: 'black' }}
+            images={this.state.images}
+          />
         </View>
       );
     }

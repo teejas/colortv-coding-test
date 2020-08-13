@@ -44,7 +44,6 @@ class SearchScreen extends Component {
 
   render() {
     const { search, results } = this.state;
-    console.log(search);
 
     return (
       <View>
